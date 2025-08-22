@@ -1,0 +1,11 @@
+.env
+node_modules
+tmp
+downloads
+.DS_Store
+dist
+cache.json
+playwright-report
+inference_summary
+test-results
+.claude

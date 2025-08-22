@@ -1,0 +1,39 @@
+{
+  "name": "playwright-ai-automation",
+  "description": "AI-powered browser automation framework built on Playwright and Stagehand, featuring natural language commands, smart caching, and AWS Bedrock integration",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx index.ts",
+    "dev": "tsx --watch index.ts",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist cache.json",
+    "clean:cache": "rm -f cache.json",
+    "postinstall": "playwright install"
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^3.0.9",
+    "@ai-sdk/openai": "^2.0.18",
+    "@aws-sdk/credential-providers": "^3.872.0",
+    "@browserbasehq/sdk": "^2.6.0",
+    "@browserbasehq/stagehand": "^2.4.3",
+    "ai": "^5.0.20",
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.7",
+    "openai": "^5.13.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+}
